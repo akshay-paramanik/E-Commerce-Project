@@ -1,0 +1,22 @@
+.container .main .right-part .add-product .item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  margin: 2%;
+}
+.container .main .right-part .image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .main .right-part .image-container img {
+  object-fit: contain;
+}
+.imgc {
+  width: 10%;
+  padding: 1%;
+}
+.imgc img {
+  width: 100%;
+  object-fit: contain;
+}
