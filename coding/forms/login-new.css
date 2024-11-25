@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: rgb(216, 223, 230);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(254, 254, 254);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.container .navbar img {
+  width: 20px;
+}
+.container .navbar div {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.search {
+  width: 35rem;
+  height: 3rem;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  background-color: rgba(233, 237, 242, 0.959);
+}
+.search input {
+  width: 32rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.search img {
+  transform: translateY(5px);
+}
+
+.container .text-catagory {
+  display: flex;
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-around;
+}
+.container .text-catagory div > span {
+  /* background-color: aliceblue; */
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-top: 1.6px solid white;
+  border-left: 1.6px solid white;
+  transform: rotateZ(-135deg) translateY(5px);
+}
+.container .text-catagory div {
+  cursor: pointer;
+}
+.container .main {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  background-color: aliceblue;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 2%;
+}
+.container .main .image-container {
+  width: 100%;
+  height: 100%;
+}
+.container .main .image-container img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+}
+.container .main .form-container {
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+}
+.container .main .form-container h1 {
+  font-size: 280%;
+  margin: 5%;
+  text-align: center;
+}
+.sign-in {
+  padding: 5%;
+}
+.container .main .sign-in form h1 {
+  text-align: center;
+}
+.container .main .sign-in p {
+  margin-bottom: 0.8%;
+}
+
+/* Full-width input fields */
+.container .main .sign-in input[type="text"],
+.container .main .sign-in input[type="password"],
+.container .main .sign-in input[type="number"],
+.container .main .sign-in select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.container .main .sign-in input[type="number"]::-webkit-outer-spin-button,
+.container .main .sign-in input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container .main .sign-in input[type="checkbox"],
+.container .main .sign-in span {
+  margin: 5px 0 22px 0;
+}
+
+.container .main .sign-in input[type="text"]:focus,
+.container .main .sign-in input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/register button */
+.container .main .sign-in .registerbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.container .main .sign-in .registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}

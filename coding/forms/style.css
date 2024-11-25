@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: rgb(216, 223, 230);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(254, 254, 254);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  /* margin-bottom: 10px; */
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.container .navbar img {
+  width: 20px;
+}
+.container .navbar div {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.search {
+  width: 35rem;
+  height: 3rem;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  background-color: rgba(233, 237, 242, 0.959);
+}
+.search input {
+  width: 32rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.search img {
+  transform: translateY(5px);
+}
+
+.container .text-catagory {
+  display: flex;
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-around;
+}
+.container .text-catagory div > span {
+  /* background-color: aliceblue; */
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-top: 1.6px solid white;
+  border-left: 1.6px solid white;
+  transform: rotateZ(-135deg) translateY(5px);
+}
+.container .text-catagory div {
+  cursor: pointer;
+}
+.container .main {
+  width: 80%;
+  height: 100%;
+}
+.container .main .outer-form {
+  display: flex;
+  width: 90%;
+  height: 80vh;
+  position: relative;
+  left: 15%;
+  margin-top: 2%;
+}
+.container .main .image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container .main .outer-form .image-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.container .main .outer-form .form-container {
+  background-image: linear-gradient(to bottom, #87cefa, #ffffff, #ffb6c1);
+  /* margin-right: 8%; */
+  /* transform: translateX(-15px); */
+  box-shadow: 0 0 30px black;
+  /* position: relative; */
+  width: 100%;
+}
+.container .main .outer-form .form-container h1 {
+  font-size: 35px;
+  margin: 2%;
+  text-align: center;
+}
+.container .main .outer-form .form-container form div {
+  position: relative;
+  margin: 5%;
+  width: 90%;
+  border-bottom: 2px solid #ffb6c1;
+}
+.container .main .outer-form .form-container form div img {
+  position: absolute;
+  width: 1.5rem;
+  right: 0;
+  top: 1rem;
+  cursor: pointer;
+}
+.container .main .outer-form .form-container form div input {
+  width: 80%;
+  height: 2.4rem;
+  outline: none;
+  background: none;
+  border: none;
+  display: block;
+}
+.container .main .outer-form .form-container form div label {
+  position: absolute;
+  transform: translateY(-27px);
+  font-size: 18px;
+  transition: 0.5s;
+}
+.container
+  .main
+  .outer-form
+  .form-container
+  form
+  div
+  input:focus-within
+  ~ label,
+.container
+  .main
+  .outer-form
+  .form-container
+  form
+  div:not(:has(:placeholder-shown))
+  label {
+  transform: translateY(-50px);
+  color: blue;
+  font-size: 14px;
+}
+.container .main .outer-form .form-container form .external {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+.container .main .outer-form .form-container form .external a {
+  font-size: 14px;
+}
+.container .main .outer-form .form-container form input[type="submit"] {
+  width: 20%;
+  font-size: 18px;
+  background-color: blue;
+  color: white;
+}
+.tooltip {
+  width: 9rem;
+  border: 1px dotted black;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  left: 80%;
+  top: 50px;
+  border-radius: 5px;
+  background-color: white;
+  visibility: hidden;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  transform: rotate(180deg);
+}
