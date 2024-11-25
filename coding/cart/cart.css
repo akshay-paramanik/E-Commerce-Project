@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: rgb(216, 223, 230);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(254, 254, 254);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.container .navbar img {
+  width: 20px;
+}
+.container .navbar div {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.search {
+  width: 35rem;
+  height: 3rem;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  background-color: rgba(233, 237, 242, 0.959);
+}
+.search input {
+  width: 32rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.search img {
+  transform: translateY(5px);
+}
+.container .main {
+  display: flex;
+  flex-direction: row;
+}
+.container .main .cart-container {
+  width: 68%;
+  margin-right: 15px;
+}
+.container .main .cart-container .cart-box {
+  width: 100%;
+  background-color: white;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  padding: 18px;
+}
+.container .main .cart-container .heading-place {
+  width: 100%;
+  background-color: white;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .cart-container .heading-place h1 {
+  margin-bottom: 10px;
+  display: inline;
+}
+.container .main .cart-container .heading-place span {
+  width: 6rem;
+  color: blue;
+  border: 1px solid blue;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container .main .cart-container .cart-box .box-item {
+  display: flex;
+  align-items: center;
+}
+.container .main .cart-container .cart-box .box-item .image-container {
+  width: 8rem;
+  height: 9rem;
+  /* background-color: black; */
+  display: inline-block;
+  object-fit: fill;
+  margin: 2%;
+}
+.container .main .cart-container .cart-box .box-item .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.container .main .cart-container .cart-box .box-item .text-part .description {
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .sub-description {
+  font-size: 15px;
+  color: rgba(118, 106, 106, 0.87);
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.container .main .cart-container .cart-box .box-item .text-part .seller {
+  font-size: 15px;
+  color: rgba(118, 106, 106, 0.87);
+  margin-bottom: 8px;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .price
+  .initial-price {
+  font-size: 13px;
+  color: rgb(118, 106, 106);
+  margin-right: 8px;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .price
+  .final-price {
+  font-weight: 800;
+  font-size: 19px;
+}
+.container .main .cart-container .cart-box .box-item .text-part .price .offer {
+  font-size: 16px;
+  margin-left: 8px;
+  color: green;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  .quantity {
+  gap: 12px;
+  margin: 13px;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  .quantity
+  span {
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  border: 1.8px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  .quantity
+  input::-webkit-outer-spin-button,
+input {
+  width: 45px;
+  outline: none;
+  text-align: center;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  .quantity
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  > span {
+  margin-right: 15px;
+  font-weight: 800;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  > span
+  a {
+  color: black;
+  text-decoration: none;
+}
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  > span:hover,
+.container
+  .main
+  .cart-container
+  .cart-box
+  .box-item
+  .text-part
+  .external-part
+  > span
+  a:hover {
+  color: blue;
+  cursor: pointer;
+}
+.container .main .cart-container .order-request {
+  width: 100%;
+  background-color: aliceblue;
+  margin-left: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: end;
+}
+.container .main .cart-container .order-request button {
+  width: 13rem;
+  height: 3rem;
+  font-size: 20px;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .main .caculation {
+  background-color: white;
+  width: 28.5%;
+  height: 400px;
+  margin-left: 13px;
+  padding: 25px;
+  position: fixed;
+  right: 15px;
+}
+.container .main .caculation h2 {
+  margin-bottom: 10px;
+}
+.container .main .caculation hr {
+  border: 0.5px dotted rgba(118, 106, 106, 0.654);
+  margin-bottom: 12px;
+}
+.container .main .caculation .price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.container .main .caculation .discount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.container .main .caculation .discount span:last-child {
+  color: green;
+}
+.container .main .caculation .delivary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.container .main .caculation .package {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.container .main .caculation .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.container .main .caculation p {
+  color: green;
+  font-weight: 800;
+}

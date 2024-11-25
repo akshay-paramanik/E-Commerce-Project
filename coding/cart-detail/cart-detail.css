@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: rgb(216, 223, 230);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(254, 254, 254);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  /* margin-bottom: 8px; */
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.container .navbar img {
+  width: 20px;
+}
+.container .navbar div {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.search {
+  width: 35rem;
+  height: 3rem;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  background-color: rgba(233, 237, 242, 0.959);
+}
+.search input {
+  width: 32rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.search img {
+  transform: translateY(5px);
+}
+
+.container .text-catagory {
+  display: flex;
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-around;
+}
+.container .text-catagory div > span {
+  /* background-color: aliceblue; */
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-top: 1.6px solid white;
+  border-left: 1.6px solid white;
+  transform: rotateZ(-135deg) translateY(5px);
+}
+.container .text-catagory div {
+  cursor: pointer;
+}
+.container .detail-main {
+  position: relative;
+}
+.container .detail-main .sides {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 10px;
+  position: relative;
+}
+.container .detail-main .sides .left-part {
+  width: 40%;
+  /* background-color: black; */
+  margin: 13px;
+  padding: 13px;
+  position: sticky;
+  top: 0%;
+}
+.container .detail-main .left-part .image-part {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+}
+.container .detail-main .left-part .image-part .sub-image {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  gap: 10px;
+  margin-right: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+.container .detail-main .left-part .image-part .sub-image img {
+  width: 100%;
+  object-fit: contain;
+}
+.container .detail-main .left-part .image-part .main-image {
+  width: 100%;
+  height: 40dvh;
+  position: relative;
+}
+.container .detail-main .left-part .image-part .main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: aliceblue;
+  position: absolute;
+}
+.container .detail-main .left-part .image-part .wishlist {
+  position: relative;
+}
+.container .detail-main .left-part .image-part .wishlist span img {
+  width: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+#show {
+  visibility: hidden;
+}
+.left-group {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+}
+.container .detail-main .left-part .btns {
+  display: flex;
+  justify-content: end;
+  margin-top: 13px;
+  gap: 10px;
+}
+.container .detail-main .left-part .btns button {
+  width: 13rem;
+  height: 3rem;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.container .detail-main .left-part .btns button a {
+  text-decoration: none;
+  color: white;
+}
+.container .detail-main .left-part .btns button:first-child {
+  background-color: #ff9f00;
+  color: white;
+  font-weight: 800;
+}
+.container .detail-main .left-part .btns button span img {
+  width: 1.5rem;
+  margin-right: 8px;
+}
+.container .detail-main .left-part .btns button:last-child {
+  background-color: #fb641b;
+  color: white;
+  font-weight: 800;
+}
+.container .detail-main .right-part {
+  padding: 13px;
+  position: relative;
+}
+.container .detail-main .right-part .heading {
+  font-size: 18px;
+}
+.container .detail-main .right-part .rating {
+  margin: 8px 0px;
+}
+.container .detail-main .right-part .rating span:first-child {
+  background-color: green;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  display: inline-block;
+  width: 2.8rem;
+  text-align: center;
+}
+.container .detail-main .right-part .rating span:last-child {
+  font-size: 14px;
+  color: rgb(118, 106, 106);
+}
+.container .detail-main .right-part .price-offer {
+  margin: 8px 0px;
+}
+.container .detail-main .right-part .price-offer .optional-offer {
+  color: green;
+  font-size: 14px;
+}
+.container .detail-main .right-part .price-offer .final-price {
+  font-size: 25px;
+  font-weight: 800;
+}
+.container .detail-main .right-part .price-offer .initial-price {
+  color: rgb(118, 106, 106);
+}
+.container .detail-main .right-part .price-offer .offer {
+  color: green;
+}
+.container .detail-main .right-part .available-offer h5 {
+  font-size: 17px;
+}
+.container .detail-main .right-part .available-offer .offer-desc {
+  display: flex;
+  flex-direction: row;
+}
+.container .detail-main .right-part .available-offer .offer-desc img {
+  width: 1.8rem;
+  transform: rotate(35deg);
+  margin-right: 8px;
+}
+.container .detail-main .right-part .available-offer .offer-desc .offer-site {
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+.container .detail-main .right-part .delivery-check {
+  margin: 10px 0px;
+  /* display: flex; */
+}
+.container .detail-main .right-part .delivery-check h4 {
+  display: inline-block;
+}
+.container .detail-main .right-part .delivery-check .input-pin {
+  width: 15rem;
+  border-bottom: 1px solid;
+  margin: 8px;
+  color: blue;
+  padding: 8px;
+}
+.container .detail-main .right-part .delivery-check .input-pin input {
+  margin: 0px 7px;
+  width: 8rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.container .detail-main .right-part .delivery-check .result {
+  display: flex;
+  margin: 8px;
+}
+.container .detail-main .right-part .delivery-check .result span {
+  color: green;
+}
+.container .detail-main .right-part .delivery-check .result span del {
+  color: rgb(118, 106, 106);
+  margin: 0px 5px;
+}
+.container .detail-main .right-part .highlight ul {
+  font-weight: 600;
+}
+.container .detail-main .right-part .highlight ul li {
+  font-weight: 400;
+  margin: 0px 25px;
+  color: rgb(118, 106, 106);
+}
+.container .detail-main .right-part .product-description {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-y: hidden;
+}
+.container .detail-main .right-part .product-description .image-container {
+  width: 30%;
+  margin-right: 8px;
+}
+.container .detail-main .right-part .product-description .image-container img {
+  width: 100%;
+}
+.container .detail-main .right-part .product-description .description {
+  width: 70%;
+}
+.container .detail-main .right-part .spacification {
+  width: 100%;
+  margin: 3% 0%;
+}
+/* .container .detail-main .right-part .spacification h2 {
+  margin: 3%;
+} */
+.container .detail-main .right-part .spacification table {
+  margin: 1.8% 0%;
+}
+.container .detail-main .right-part .spacification table tr td:first-child {
+  font-size: 14px;
+  color: rgb(118, 106, 106);
+  padding: 1.5%;
+  vertical-align: top;
+}
+.container .detail-main .right-part .spacification table tr td:last-child {
+  font-size: 14px;
+  padding: 1.5%;
+}
+.sac-table {
+  display: none;
+}
+#view {
+  color: blue;
+  cursor: pointer;
+}
+.container .detail-main .right-part .rating-main {
+  width: 100%;
+  padding: 2%;
+}
+.container .detail-main .right-part .rating-main .headline {
+  display: flex;
+  justify-content: space-between;
+}
+.container .detail-main .right-part .rating-main .headline div {
+  font-size: 150%;
+  font-weight: 700;
+}
+.container .detail-main .right-part .rating-main .headline button {
+  font-size: 100%;
+  padding: 1%;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.container
+  .detail-main
+  .right-part
+  .rating-main
+  .spacipied-rating
+  .rating
+  > .rates {
+  background-color: blue;
+  color: white;
+}
+.rating-counter {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.rating-counter > h5 {
+  font-size: 100%;
+  color: blue;
+}
+.rating-counter input[type="text"] {
+  width: 40vh;
+  height: 5vh;
+  padding-left: 2%;
+  font-size: 100%;
+}
+.rating-counter input[type="submit"] {
+  width: 18%;
+  /* height: 8dvh; */
+  margin-left: 2%;
+  font-size: 80%;
+  background-color: blue;
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+}
+.rating-counter .review {
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0%;
+}
+.rating-counter .review h5 {
+  font-size: 100%;
+}
+
+.star {
+  font-size: 170%;
+  cursor: pointer;
+}
+
+.one {
+  color: rgb(255, 0, 0);
+}
+
+.two {
+  color: rgb(255, 106, 0);
+}
+
+.three {
+  color: rgb(255, 183, 0);
+}
+
+.four {
+  color: rgb(174, 255, 0);
+}
+
+.five {
+  color: rgb(24, 159, 14);
+}
+.container .card {
+  /* display: flex; */
+  /* flex-direction: row; */
+  width: 98%;
+  overflow-x: hidden;
+  margin: 10px;
+  background-color: aliceblue;
+  height: 22rem;
+}
+.container .card .main-cart {
+  display: flex;
+  padding-left: 15px;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+.container .card h1 {
+  display: block !important;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.container .card .cart-item {
+  width: 15%;
+  height: 17rem;
+  border: 1px solid rgb(197, 204, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  /* overflow-y: hidden; */
+  text-align: center;
+  padding: 1%;
+}
+.container .card .cart-item a {
+  color: black;
+  text-decoration: none;
+}
+.container .card .main-cart .cart-item img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}

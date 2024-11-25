@@ -1,0 +1,6 @@
+.container .main .right-part .add-product .item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  margin: 2%;
+}
