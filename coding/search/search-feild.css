@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(216, 223, 230);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(254, 254, 254);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  /* margin-bottom: 8px; */
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.container .navbar img {
+  width: 20px;
+}
+.container .navbar div {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.search {
+  width: 35rem;
+  height: 3rem;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  background-color: rgba(233, 237, 242, 0.959);
+}
+.search input {
+  width: 32rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.search img {
+  transform: translateY(5px);
+}
+
+.container .text-catagory {
+  display: flex;
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-around;
+}
+.container .text-catagory div > span {
+  /* background-color: aliceblue; */
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-top: 1.6px solid white;
+  border-left: 1.6px solid white;
+  transform: rotateZ(-135deg) translateY(5px);
+}
+.container .text-catagory div {
+  cursor: pointer;
+}
+.container .main-field {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  margin: 0.8%;
+}
+.container .main-field .left-part {
+  background-color: whitesmoke;
+  width: 30%;
+  margin-right: 0.8%;
+  padding: 1%;
+}
+.container .main-field .left-part .filter-part {
+  width: 100%;
+}
+.container .main-field .left-part .filter-part h3 {
+  font-size: 130%;
+  font-weight: 900;
+  margin-bottom: 5%;
+}
+.container .main-field .left-part .filter-part .catagory {
+  padding: 10% 3%;
+  border-top: 0.1px solid rgb(213, 213, 213);
+  border-bottom: 0.1px solid rgb(213, 213, 213);
+}
+.container .main-field .left-part .filter-part h4 {
+  font-weight: 700;
+}
+.container .main-field .left-part .filter-part p {
+  font-size: 100%;
+}
+.container .main-field .left-part .filter-part .item {
+  margin-left: 5%;
+}
+.container .main-field .left-part .filter-part .rang {
+  border-bottom: 0.1px solid rgb(213, 213, 213);
+  padding: 10% 3%;
+}
+.container .main-field .left-part .filter-part .rang .max-min {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+.listing {
+  display: none;
+}
+.container .main-field .left-part .filter-part .rang .max-min .item-list {
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  position: absolute;
+  background-color: white;
+}
+.rang-list {
+  display: none;
+}
+.min:hover .rang-list {
+  display: block;
+}
+.max:hover .rang-list {
+  display: block;
+}
+.container
+  .main-field
+  .left-part
+  .filter-part
+  .rang
+  .max-min
+  input[type="text"] {
+  width: 80%;
+}
+.container .main-field .left-part .filter-part .rang .max-min span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 0.5vh solid transparent;
+  border-right: 0.5vh solid transparent;
+  border-bottom: 0.75vh solid #555;
+}
+.min:hover .trangle {
+  rotate: 180deg;
+}
+.max:hover .trangle {
+  rotate: 180deg;
+}
+.container .main-field .left-part .filter-part .brand {
+  border-bottom: 0.1px solid rgb(213, 213, 213);
+  padding: 10% 3%;
+}
+.container .main-field .right-part {
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 1%;
+}
+.container .main-field .right-part .product-container {
+  width: 100%;
+  /* height: 25dvh; */
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  margin: 3% 0%;
+  border-bottom: 0.1px solid rgb(213, 213, 213);
+}
+.container .main-field .right-part .product-container .image-container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  padding: 1%;
+  gap: 1%;
+}
+.container .main-field .right-part .product-container .image-container .image1 {
+  width: 90%;
+  height: 90%;
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .image-container
+  .image1
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .image-container
+  .wishlist {
+  position: relative;
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .image-container
+  .wishlist
+  img {
+  width: 1.5rem;
+  position: absolute;
+}
+#show {
+  visibility: hidden;
+}
+#show:focus {
+  visibility: visible;
+}
+
+/* wishlist */
+.like-button,
+.dislike-button {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.like-button.clicked i {
+  color: red; /* Change color when clicked */
+}
+
+.dislike-button.clicked i {
+  color: red; /* Change color when clicked */
+}
+
+.container .main-field .right-part .product-container .declaration {
+  /* background-color: #555; */
+  width: 50%;
+  padding: 2%;
+}
+
+.container .main-field .right-part .product-container .declaration .heading {
+  font-size: 18px;
+}
+.container .main-field .right-part .product-container .declaration .rating {
+  margin: 8px 0px;
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .declaration
+  .rating
+  span:first-child {
+  background-color: green;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  display: inline-block;
+  width: 2.8rem;
+  text-align: center;
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .declaration
+  .rating
+  span:last-child {
+  font-size: 90%;
+  color: rgb(118, 106, 106);
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .declaration
+  .sub-description {
+  margin: 2% 0%;
+}
+.sub-list {
+  font-size: 90%;
+  color: rgb(36, 31, 31);
+}
+.container .main-field .right-part .product-container .pricing-detail {
+  width: 30%;
+  padding: 2%;
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .pricing-detail
+  .main-price {
+  font-size: 160%;
+  font-weight: 700;
+}
+.container
+  .main-field
+  .right-part
+  .product-container
+  .pricing-detail
+  .initial-price {
+  font-size: 90%;
+  color: rgb(36, 31, 31);
+}
