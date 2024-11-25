@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: rgb(216, 223, 230);
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(254, 254, 254);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.container .navbar img {
+  width: 23px;
+}
+.container .navbar div {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.account .list {
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  position: absolute;
+  background-color: white;
+}
+
+.account .rang-list {
+  display: none;
+}
+.account:hover .rang-list {
+  display: block;
+}
+.search {
+  width: 380px;
+  /* border: 2px solid black; */
+  border-radius: 15px;
+  background-color: rgba(233, 237, 242, 0.959);
+}
+.search form input {
+  width: 260px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.search form img {
+  transform: translateY(5px);
+}
+.container .catagory {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(254, 254, 254);
+  margin-left: 13px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.container .catagory img {
+  width: 80px;
+}
+.container .catagory div {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .catagory .furniture img {
+  width: 155px;
+}
+.container .catagory .electronic img {
+  width: 140px;
+}
+.container .catagory .kids img {
+  width: 55px;
+}
+.container .catagory .bike img {
+  width: 96px;
+}
+.container .catagory .grocery img {
+  width: 95px;
+}
+/* .container .carousel {
+  width: 98%;
+  height: 16rem;
+  background-color: aliceblue;
+  margin-left: 13px;
+  margin-bottom: 10px;
+  position: relative;
+  object-fit: fill;
+}
+.container .carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container .carousel .caro-btn div {
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-color: rgb(255, 239, 239);
+  border-top: 5px solid rgb(255, 255, 255);
+  border-left: 5px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+.container .carousel #Prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(60%, -50%) rotate(-45deg);
+}
+.container .carousel #next {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-0%, 0%) rotate(135deg);
+} */
+.container .carousel {
+  width: 98%;
+  height: 12rem;
+  margin-left: 15px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.container .carousel div {
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  border-top: 5px solid rgb(255, 255, 255);
+  border-left: 5px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+.container .carousel #Prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(60%, -50%) rotate(-45deg);
+}
+.container .carousel #Next {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-160%, -50%) rotate(135deg);
+}
+.container .carousel img {
+  width: 100%;
+  object-fit: fill;
+  height: 100%;
+  position: absolute;
+}
+.container .card {
+  /* display: flex; */
+  /* flex-direction: row; */
+  width: 98%;
+  overflow-x: hidden;
+  margin-left: 13px;
+  margin-bottom: 10px;
+  background-color: white;
+  height: 22rem;
+}
+.container .card .main-cart {
+  display: flex;
+  padding-left: 15px;
+  gap: 15px;
+  padding-right: 15px;
+}
+.container .card h1 {
+  display: block !important;
+  margin: 1%;
+}
+.slidebar {
+  display: none;
+}
+.container .card .cart-item {
+  width: 15%;
+  height: 17rem;
+  border: 1px solid rgb(197, 204, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  /* overflow-y: hidden; */
+  text-align: center;
+  padding: 1%;
+}
+.container .card .cart-item a {
+  color: black;
+  text-decoration: none;
+}
+.container .card .main-cart .cart-item img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}
+.footer {
+  width: 100%;
+  color: beige;
+  background-color: rgb(24, 27, 41);
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Open+Sans&family=Poppins&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  body {
+    background-color: rgb(216, 223, 230);
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .container .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(254, 254, 254);
+    padding: 1%;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+  }
+  .container .navbar img {
+    width: 10%;
+  }
+  .container .navbar div {
+    text-align: center;
+    font-size: 90%;
+    cursor: pointer;
+  }
+  .account .list {
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    position: absolute;
+    background-color: white;
+  }
+
+  .account .rang-list {
+    display: none;
+  }
+  .account:hover .rang-list {
+    display: block;
+  }
+  .search {
+    width: 120%;
+    height: 6dvh;
+    /* border: 2px solid black; */
+    /* border-radius: 15px; */
+    background-color: rgba(233, 237, 242, 0.959);
+    margin-left: 1%;
+  }
+  .search form input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 90%;
+  }
+  .search form img {
+    /* transform: translateY(5px); */
+  }
+  #notslide {
+    display: none;
+  }
+  .notdisplay {
+    display: none;
+  }
+  .display {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .slidebar {
+    display: inline;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .container .catagory {
+    width: 98%;
+    height: 15dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(254, 254, 254);
+    margin: 1%;
+    padding: 1%;
+  }
+  .container .catagory img {
+    width: 20%;
+    /* height: 80%; */
+    object-fit: contain;
+  }
+  .container .catagory div {
+    text-align: center;
+    font-size: 80%;
+    cursor: pointer;
+  }
+  .container .catagory .furniture img {
+    width: 155px;
+  }
+  .container .catagory .electronic img {
+    width: 140px;
+  }
+  .container .catagory .grocery img {
+    width: 95px;
+  }
+  .container .catagory .mobile img {
+    width: 90%;
+  }
+  .container .catagory .fashion img {
+    width: 90%;
+  }
+  /* .container .carousel {
+  width: 98%;
+  height: 16rem;
+  background-color: aliceblue;
+  margin-left: 13px;
+  margin-bottom: 10px;
+  position: relative;
+  object-fit: fill;
+}
+.container .carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container .carousel .caro-btn div {
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-color: rgb(255, 239, 239);
+  border-top: 5px solid rgb(255, 255, 255);
+  border-left: 5px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+.container .carousel #Prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(60%, -50%) rotate(-45deg);
+}
+.container .carousel #next {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-0%, 0%) rotate(135deg);
+} */
+  .container .carousel {
+    width: 98%;
+    height: 12rem;
+    margin-left: 15px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .container .carousel div {
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    border-top: 5px solid rgb(255, 255, 255);
+    border-left: 5px solid rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .container .carousel #Prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(60%, -50%) rotate(-45deg);
+  }
+  .container .carousel #Next {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-160%, -50%) rotate(135deg);
+  }
+  .container .carousel img {
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+    position: absolute;
+  }
+  .container .card {
+    /* display: flex; */
+    /* flex-direction: row; */
+    width: 98%;
+    overflow-x: hidden;
+    margin: 1%;
+    background-color: white;
+    height: 15rem;
+  }
+  .container .card .main-cart {
+    display: flex;
+    padding: 1%;
+    gap: 15px;
+  }
+  .container .card h1 {
+    display: block !important;
+    margin: 1%;
+    font-size: 130%;
+  }
+  .container .card .cart-item {
+    width: 20%;
+    height: 10rem;
+    border: 1px solid rgb(197, 204, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    /* overflow-y: hidden; */
+    text-align: center;
+    padding: 1%;
+  }
+  .container .card .cart-item a {
+    color: black;
+    text-decoration: none;
+  }
+  .container .card .main-cart .cart-item img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+  .container .card .main-cart .cart-item h3,
+  .container .card .main-cart .cart-item p {
+    font-size: 90%;
+  }
+  .footer {
+    width: 100%;
+    color: beige;
+    background-color: rgb(24, 27, 41);
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+  }
+}
